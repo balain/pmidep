@@ -8,6 +8,17 @@
 
       $auth = include('auth.php');
 
+      /* Sample auth.php:
+
+        <?php
+
+        return (object) array(
+            'username' => 'put-username-here',
+            'password' => 'put-password-here'
+        );
+
+       */
+
       $endpoint_url = 'https://svc.pmi.org/DEPServices/services/DEP.svc';
       $method_name = 'GetMemberExtractReport';
       $service_name = 'DEPService';
