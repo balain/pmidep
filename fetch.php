@@ -6,11 +6,13 @@
        * © Project Management Institute, Inc. All rights reserved.
        */
 
+      $auth = include('auth.php');
+
       $endpoint_url = 'https://svc.pmi.org/DEPServices/services/DEP.svc';
       $method_name = 'GetMemberExtractReport';
       $service_name = 'DEPService';
-      $username = '';
-      $password = '';
+      $username = $auth->username;
+      $password = $auth->password;
       $method_namespace = 'http://svc.pmi.org/2011/01/15';
       $auth_namespace = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd';
 
