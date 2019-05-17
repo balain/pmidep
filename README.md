@@ -1,8 +1,21 @@
 # pmidep
 PMI DEP code
 
-## Download and Ingest
+# Pre-requisite: Configure Authentication
+
+1. Create a file called `auth.php` in the base directory
+1. Follow this template:
+```<?php
+
+return (object) array(
+    'username' => 'USERNAME_HERE',
+    'password' => 'PASSWORD_HERE'
+);
+```
+1. Replace USERNAME_HERE and PASSWORD_HERE with appropriate values from the DEP account username/password.
+
+# Download and Ingest
 - Run a script to download and ingest the data: `./process.sh`
 
-## Site Lists
-- Create/update the database: `sqlite3 members.sqlite`
+# Site Lists
+- Report on members by zip code: `sqlite3 latest_data < run_site_queries`
