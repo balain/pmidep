@@ -1,0 +1,8 @@
+<?php
+
+return (object) array(
+    'username' => 'put-username-here',
+    'password' => 'put-password-here'
+);
+
+?>
