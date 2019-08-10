@@ -4,3 +4,5 @@ auth.php
 *.db
 *.sqlite
 *.sqlite3
+
+go.bat
