@@ -3,6 +3,7 @@ PMI DEP code
 
 # Pre-requisite: Configure Authentication
 
+1. Enable both the soap and openssl PHP extensions in the php.ini file
 1. Create a file called `auth.php` in the base directory
 1. Follow this template:
 ```<?php
