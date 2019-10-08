@@ -6,3 +6,6 @@ auth.php
 *.sqlite3
 
 go.bat
+
+reports/
+
