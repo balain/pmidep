@@ -6,6 +6,8 @@
        * © Project Management Institute, Inc. All rights reserved.
        */
 
+      /* Note: Both the soap and openssl extensions must be loaded */
+
       $auth = include('auth.php');
 
       /* Sample auth.php:
