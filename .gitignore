@@ -2,6 +2,7 @@
 auth.php
 *.csv
 *.db
+*.md5sum
 *.sqlite
 *.sqlite3
 
