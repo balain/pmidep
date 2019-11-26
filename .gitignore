@@ -6,8 +6,11 @@ auth.php
 *.sqlite
 *.sqlite3
 
+latest_timestamp.txt
+
 go.bat
 
 reports/
 archive/
+logs/
 
