@@ -1,4 +1,3 @@
-.idea
 auth.php
 *.csv
 *.db
@@ -6,8 +5,12 @@ auth.php
 *.sqlite
 *.sqlite3
 
+config.js
+
 go.bat
 
+node_modules/
 reports/
 archive/
 
+.idea/
