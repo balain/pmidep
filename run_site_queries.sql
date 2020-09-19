@@ -1,3 +1,5 @@
+.read convertDateFields.sql
+
 .output zips_annapolis-20190516.csv
 .read zips_annapolis.sql
 .output zips_annapolisjunction-20190516.csv
