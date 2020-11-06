@@ -3,7 +3,6 @@ const chalk = require('chalk')
 
 const config = require('./config')
 const sqlite3 = require('sqlite3').verbose()
-const db = new sqlite3.Database(config.dbFilename)
 
 const { Command } = require('commander')
 const program = new Command()
@@ -14,8 +13,11 @@ program
   .option('-f, --firstname <first name>', 'Find by First Name')
   .option('-p, --pmp <PMP number>', 'Find by PMP Number')
   .option('-i, --id <id>', 'Find by ID')
+  .option('-d, --database <filename>', 'Use Alternate Database')
 
 program.parse(process.argv)
+
+const db = program.database ? new sqlite3.Database(program.database) : new sqlite3.Database(config.dbFilename)
 
 let whereList = []
 let valList = []
