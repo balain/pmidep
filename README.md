@@ -1,6 +1,10 @@
 # pmidep
 PMI DEP code
 
+# Repo Archived
+
+As of Jan 11th, 2021, this repository has been archived.
+
 # Pre-requisite: Configure Authentication
 
 1. Enable both the soap and openssl PHP extensions in the php.ini file
